@@ -1,0 +1,12 @@
+Documentation was generated with Doxygen
+  http://www.stack.nl/~dimitri/doxygen/index.html
+  
+UML diagrams made with Creately
+  https://creately.com/app/
+    
+Gantt chart made using a Gantt chart template
+  https://www.teamgantt.com/free-gantt-chart-excel-template  
+ 
+
+    
+

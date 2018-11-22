@@ -1,0 +1,18 @@
+TEST 1: PLAYER IS DEADTH (Player_Status)
+TEST 2: HIT BY AN ENEMY (Player_Status)
+TEST 3: PLAYER MOVE LEFT (Player_Movement)
+TEST 4: PLAYER MOVE RIGHT (Player_Movement)
+TEST 5: PLAYER JUMP (Player_Movement)
+TEST 6: PLAYER STANDS ON GROUND/WALL (Player_Movement)
+TEST 7: PLAYER HITS AN ENEMY PASSED (Player_Movement)
+TEST 8: ENEMY GOT HIT (Enemies_Status)
+TEST 9: ENEMY HIT PLAYER (Enemies_Movement)
+TEST 10: ENEMY SHOT PLAYER (E_Bullet)
+TEST 11: PLAYER SHOT AN ENEMY (Bullet)
+TEST 12: PLAYER SHOT THE BOSS (Bullet)
+TEST 13: BOSS GOT HIT (Boss_Status)
+TEST 14: BOSS HIT WALL/ENEMY (Boss_Movement)
+TEST 15: BOSS HIT PLAYER (Boss_Movement)
+
+There is a bug when the Player stop moving touching other objects at the middle of air.
+Camera won't stop moving after you got hit by a bullet and die
