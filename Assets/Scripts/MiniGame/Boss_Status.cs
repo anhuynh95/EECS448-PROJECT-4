@@ -1,12 +1,16 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Boss_Status : MonoBehaviour {
 
-    private int health = 2500;
-  
-    
+    private int health = 25;
+    public Text win;
+
     /**
     * defines enemy taking damage
     * @pre damage value from bullet
@@ -22,9 +26,14 @@ public class Boss_Status : MonoBehaviour {
         if (health <= 0)
         {
            
-            Debug.Log("TEST 13: BOSS GOT HIT PASSED");
-            Die();
             
+            StartCoroutine("Die");
+
+
+        }
+        else
+        {
+            Debug.Log("TEST 13: BOSS GOT HIT PASSED");
         }
     }
     /**
@@ -33,13 +42,19 @@ public class Boss_Status : MonoBehaviour {
    * @post enemy is dead
    * @return void
    **/
-    void Die()
+    IEnumerator Die()
     {
+
+
         
+       
         Destroy(gameObject);
+        win.text = "You Just Won The Ganme!";
+        yield return new WaitForSeconds(1);
+
 
     }
 
-    
-    
+
+
 }

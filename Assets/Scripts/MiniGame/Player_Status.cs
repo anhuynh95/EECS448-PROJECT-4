@@ -16,7 +16,13 @@ public class Player_Status : MonoBehaviour {
 
     public static bool isAlive;
     public Text gameOver;
-    
+    public Text intro;
+
+    void Awake()
+    {
+        StartCoroutine("BeginningIntroduction");
+    }
+
 
     /**
      * used for initialization
@@ -89,4 +95,12 @@ public class Player_Status : MonoBehaviour {
         }
     }
 
+
+    IEnumerator BeginningIntroduction()
+    {
+        intro.text = "This Is the Introduction";
+        yield return new WaitForSeconds(3);
+        Destroy(intro);
+        
+    }
 }
